@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Regression tests" parallel="classes">
+
+    <test name="Regression">
+
+        <groups>
+            <run>
+                <include name="Positive"/>
+                <include name="Negative"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="tests.Addition"/>
+            <class name="tests.Subtraction"/>
+            <class name="tests.Division"/>
+            <class name="tests.Multiplication"/>
+        </classes>
+
+    </test>
+
+</suite>
